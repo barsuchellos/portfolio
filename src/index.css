@@ -1,0 +1,14 @@
+body {
+    background-color: #d7d7d7;
+    min-width: 320px;
+    max-width: 1536px;
+    margin: 0 auto !important;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+
+

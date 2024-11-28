@@ -1,0 +1,42 @@
+.skill-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__image {
+    max-width: 128px;
+    max-height: 128px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.9s ease 0s;
+  }
+}
+
+@media (width < 768px) {
+  .skill-logo{
+
+  &__image {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  }
+}
+
+
+.animation__image {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1.8s ease 0s;
+}
+
+.animation__title {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1.8s ease 0s;
+}

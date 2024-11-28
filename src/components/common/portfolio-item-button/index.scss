@@ -1,0 +1,50 @@
+.portfolio-button {
+  background-color: transparent;
+  margin-top: 1em;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-top: transparent;
+  border-bottom: transparent;
+  padding: 10px 30px;
+  color: white;
+  font-weight: 300;
+  position: relative;
+  font-size: 20px;
+
+  cursor: pointer;
+  margin-bottom: 14px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    transition: width 0.4s ease;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    transition: width 0.4s ease ;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    transition: width 0.4s ease 0.2s;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+@media (width> 768px) {
+
+}

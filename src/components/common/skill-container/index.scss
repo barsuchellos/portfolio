@@ -1,0 +1,30 @@
+
+.skills__container {
+  width: 100%;
+}
+
+.skills__description {
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0 0 14px 0;
+}
+
+.skills__container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+@media (width > 768px) {
+  .skills__container-logo {
+    gap: 50px;
+  }
+  .skills__description {
+    margin: 0 0 24px 0;
+  }
+}

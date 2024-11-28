@@ -1,0 +1,46 @@
+.form-button {
+  background-color: transparent;
+  margin-top: 1em;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
+  border-top: transparent;
+  border-bottom: transparent;
+  padding: 10px 40px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  font-size: 25px;
+
+  cursor: pointer;
+  margin-bottom: 14px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 0;
+    background-color: black;
+    transition: width 0.4s ease;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    transition: width 0.4s ease ;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+    transition: width 0.4s ease 0.2s;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

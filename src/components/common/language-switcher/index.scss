@@ -1,0 +1,27 @@
+.switcher {
+  display: flex;
+  position: absolute;
+  right: 16px;
+  top: 20%;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  &__button {
+    padding: 10px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(12px, 4em, 18px);
+  }
+}
+
+
+
+@media (width < 768px) {
+  .switcher {
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+}

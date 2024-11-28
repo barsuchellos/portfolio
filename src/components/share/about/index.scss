@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  opacity: 1;
+  transform: translateY(-20px);
+  transition: opacity 1.4s ease-out, transform 1s ease-out;
+  margin-top: 20px;
+
+  &__description {
+    width: 90%;
+
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 1em;
+    font-size: 18px;
+  }
+}
+
+.animation {
+  opacity: 1;
+  transform: translateY(0);
+}
